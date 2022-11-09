@@ -1,0 +1,194 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    position: relative;
+}
+  
+* {
+    transform-style: preserve-3d;
+}
+  
+:root {
+    --font-jost: 'Jost', sans-serif;
+    --font-neucha: 'Neucha', cursive;
+    --font-nunito: 'Nunito Sans', sans-serif;
+    --font-comforter: 'Comforter', cursive;
+    --duration: 4.2s;
+    --stagger: .65s;
+    --easing: cubic-bezier(.36,.7,.25,1);
+    --offscreen: 130vmax;
+    //cubic-bezier(.5, 0, .4, 1);
+    --color-bg: #205e20b6;
+    --color-blue: #384969;
+    --color-shadow: #ffc400;
+    --color-btn-blur: #4e3e8a;
+    --color-btn-non-blur: #2a2343;
+
+/* BLOG ROOT */ 
+
+}
+
+@font-face {
+    font-family: Jeju;
+    src: url(/fonts/JejuMyeongjo-Regular.ttf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-size: 3.8vmin;
+    font-family: 'Libre Baskerville', serif;
+    // letter-spacing: 1px;
+    // // font-family: 'Pangolin', cursive;
+    line-height: 0;
+    background: url('/img/bg.jpg') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  
+body {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+
+a,
+input,
+button,
+textarea {
+ display: inline-block;
+ vertical-align: middle;
+ border: none;
+ border-radius: 0;
+ margin: 0;
+ padding: 0;
+ font: inherit;
+ color: inherit;
+ line-height: inherit;
+ text-transform: inherit;
+ text-shadow: inherit;
+ background: none;
+ -webkit-box-shadow: none;
+ box-shadow: none;
+ cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    // display: -webkit-box;
+    // display: -ms-flexbox;
+    // display: flex;
+    // gap: 0 0.5em;
+    // -webkit-box-pack: justify;
+    // -ms-flex-pack: justify;
+    // justify-content: space-between;
+    // -webkit-box-align: center;
+    // -ms-flex-align: center;
+    // align-items: center;
+}
+
+@keyframes helloHero {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+.wrapper {
+    min-width: 90vw;
+    margin: 0 0 5vw 5vw;
+}
+
+// menu
+
+header {
+    display: flex;
+    justify-content: end;
+}
+
+// nav {
+//     display: flex;
+//     align-items: end;
+// }
+
+.menu {
+    font-family: Jeju;
+    color: aliceblue;
+    font-size: 0.8rem;
+    animation-name: helloHero;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-delay: 1300ms;
+    animation-fill-mode: forwards;
+}
+
+ul {
+    padding: 1vh 1vh;
+    list-style: none;
+    display: -webkit-inline-flex;
+    li {
+        margin: auto;
+        padding: 0 2em;
+        :hover {
+            color: rgb(204, 223, 240);
+        }
+    }
+}
+
+.menu-toggle-icon {
+    display: none;
+    padding: 0.45rem;
+    padding-bottom: 0.16rem;
+}
+
+// HERO
+
+.hero {
+    margin-top: 30vh;
+}
+
+.hero-words, h1, h3, h6 {
+    font-weight: 400;
+    color: aliceblue;
+    h1 {
+        font-size: 4rem;
+        animation-name: helloHero;
+        animation-duration: 2s;
+        opacity: 0;
+        animation-delay: 300ms;
+        animation-fill-mode: forwards;
+        span {
+            font-size: 1.2rem;
+        }
+    }
+    h3 {
+        color: rgb(204, 223, 240);
+        font-family: Jeju;
+        font-size: 2.5rem;
+        animation-name: helloHero;
+        animation-duration: 2s;
+        opacity: 0;
+        animation-delay: 600ms;
+        animation-fill-mode: forwards;
+    }
+    }
+
+.hero-subtitle {
+    font-family: Jeju;
+    // margin-top: 4rem;
+    font-size: 1rem;
+    color:aliceblue;
+    line-height: 1rem;
+    animation-name: helloHero;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-delay: 1300ms;
+    animation-fill-mode: forwards;
+}
+
+
