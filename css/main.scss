@@ -186,4 +186,10 @@ ul {
     animation-fill-mode: forwards;
 }
 
+.lang-switcher {
+    color: rgba(240, 248, 255, 0.489);
+    :hover {
+        color: aliceblue;
+    }
+}
 
