@@ -224,6 +224,34 @@ ul {
     }
 }
 
+.service_section {
+    z-index: 2;
+}
+
+.service_headline {
+    padding-bottom: 0.1vw;
+    color: rgba(12, 3, 45, 0.779);
+    border-bottom: #2a234355 solid;
+}
+
 .service_text {
+    text-align: justify;
+    max-width: 85%;
     line-height: normal;
+    color: rgb(0, 0, 0);
+    font-family: var(--font-base);
+    font-size: 3vmin;
+}
+
+@media (orientation:portrait) {
+    .service_text {
+        max-width: 92%;
+    }
+}
+
+.d-link {
+    color:rgb(204, 223, 240); 
+    :hover {
+        color: aliceblue;
+    }
 }
