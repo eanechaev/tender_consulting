@@ -120,7 +120,7 @@ header {
     animation-name: helloHero;
     animation-duration: 2s;
     opacity: 0;
-    animation-delay: 1300ms;
+    animation-delay: 300ms;
     animation-fill-mode: forwards;
     z-index: 1;
 }
@@ -225,6 +225,7 @@ ul {
 }
 
 .service_section {
+    margin-top: 7vh;
     z-index: 2;
     padding-bottom: 45px;
 }
@@ -253,8 +254,8 @@ ul {
 }
 
 .d-link {
-    color:rgb(204, 223, 240); 
+    color: aliceblue; 
     :hover {
-        color: aliceblue;
+        color:rgb(204, 223, 240);
     }
 }
