@@ -17,8 +17,8 @@
     --easing: cubic-bezier(.36,.7,.25,1);
     --offscreen: 130vmax;
     //cubic-bezier(.5, 0, .4, 1);
-    --color-bg: #205e20b6;
-    --color-blue: #384969;
+    --color-text: rgb(204, 223, 240);
+    --color-base: aliceblue;
     --color-shadow: #ffc400;
     --color-btn-blur: #4e3e8a;
     --color-btn-non-blur: #2a2343;
@@ -39,7 +39,7 @@ html, body {
     // // font-family: 'Pangolin', cursive;
     line-height: 0;
     // background: linear-gradient(rgba(80, 116, 107, 0.704), pink);
-    background: url('https://eanechaev.github.io/tender_consulting/img/bg_light.jpg') fixed center center; 
+    background: url('https://eanechaev.github.io/tender_consulting/img/bg_dark.jpg') fixed center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -115,7 +115,7 @@ header {
 
 .menu {
     font-family: var(--font-base);
-    color: aliceblue;
+    color: var(--color-base);
     font-size: 0.8rem;
     animation-name: helloHero;
     animation-duration: 2s;
@@ -152,7 +152,7 @@ ul {
 
 .hero-words, h1, h3, h6 {
     font-weight: 400;
-    color: aliceblue;
+    color: var(--color-base);
     h1 {
         font-size: 4rem;
         animation-name: helloHero;
@@ -165,7 +165,7 @@ ul {
         }
     }
     h3 {
-        color: rgb(204, 223, 240);
+        color: var(--color-text);
         font-family: var(--font-base);
         font-size: 2.5rem;
         animation-name: helloHero;
@@ -180,7 +180,7 @@ ul {
     font-family: var(--font-base);
     // margin-top: 4rem;
     font-size: 1rem;
-    color:aliceblue;
+    color:var(--color-base);
     line-height: 1rem;
     animation-name: helloHero;
     animation-duration: 2s;
@@ -192,7 +192,7 @@ ul {
 .lang-switcher {
     color: rgba(240, 248, 255, 0.489);
     :hover {
-        color: aliceblue;
+        color: var(--color-base);
     }
 }
 
@@ -232,7 +232,9 @@ ul {
 
 .service_headline {
     padding-bottom: 0.1vw;
-    color: rgba(12, 3, 45, 0.779);
+    // color: rgba(12, 3, 45, 0.779);
+    color: var(--color-base);
+    // border-bottom: #2a234355 solid;
     border-bottom: #2a234355 solid;
 }
 
@@ -240,7 +242,7 @@ ul {
     text-align: justify;
     max-width: 770px;
     line-height: 23px;
-    color: rgb(0, 0, 0);
+    color: var(--color-text);
     font-family: var(--font-base);
     font-size: 2.5vmin;
 }
