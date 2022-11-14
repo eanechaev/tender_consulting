@@ -17,11 +17,44 @@
     --easing: cubic-bezier(.36,.7,.25,1);
     --offscreen: 130vmax;
     //cubic-bezier(.5, 0, .4, 1);
+    --color-text: rgb(0, 0, 0);
+    --color-base: aliceblue;
+    --color-headline: rgba(12, 3, 45, 0.779);
+    --color-line: #2a234355;
+    --color-link:#1116af;
+    --color-hover: aliceblue;
+    --bg-img: url('https://eanechaev.github.io/tender_consulting/img/bg_light.jpg') fixed center center;
+
+/* THEME SWITCHER */ 
+body.dark-theme {
     --color-text: rgb(204, 223, 240);
     --color-base: aliceblue;
-    --color-shadow: #ffc400;
-    --color-btn-blur: #4e3e8a;
-    --color-btn-non-blur: #2a2343;
+    --color-headline: aliceblue;
+    --color-line: #b8a5fd55;
+    --color-link:#f8d2a1;
+    --color-hover: rgba(163, 255, 87, 0.692);
+    --bg-img: url('https://eanechaev.github.io/tender_consulting/img/bg_dark.jpg') fixed center center;
+}
+
+.sun-icon{
+    display: none;
+}
+
+.dark-theme .moon-icon{
+    display: none;
+}
+
+.dark-theme .sun-icon{
+    display: block;
+}
+
+.theme-toggle-btn {
+    i {
+        font-size: 3.7vmin;
+        // padding-left: 5vmin;
+    }
+}
+
 
 /* BLOG ROOT */ 
 
@@ -39,7 +72,7 @@ html, body {
     // // font-family: 'Pangolin', cursive;
     line-height: 0;
     // background: linear-gradient(rgba(80, 116, 107, 0.704), pink);
-    background: url('https://eanechaev.github.io/tender_consulting/img/bg_dark.jpg') fixed center center; 
+    background: var(--bg-img);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -233,9 +266,9 @@ ul {
 .service_headline {
     padding-bottom: 0.1vw;
     // color: rgba(12, 3, 45, 0.779);
-    color: var(--color-base);
+    color: var(--color-headline);
     // border-bottom: #2a234355 solid;
-    border-bottom: #2a234355 solid;
+    border-bottom: var(--color-line) solid;
 }
 
 .service_text {
@@ -256,8 +289,8 @@ ul {
 }
 
 .d-link {
-    color: aliceblue; 
+    color: var(--color-link); 
     :hover {
-        color:rgb(204, 223, 240);
+        color: var(--color-hover);
     }
 }
