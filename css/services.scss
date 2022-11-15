@@ -18,11 +18,13 @@
     --offscreen: 130vmax;
     //cubic-bezier(.5, 0, .4, 1);
     --color-text: rgb(0, 0, 0);
-    --color-base: aliceblue;
+    --color-base: rgba(0, 0, 0, 0.714);
     --color-headline: rgba(12, 3, 45, 0.779);
     --color-line: #2a234355;
-    --color-link:#1116af;
-    --color-hover: aliceblue;
+    --color-link:#0e105f;
+    --color-item:rgba(0, 0, 0, 0.232);
+    --color-hover: rgb(12, 41, 171);
+    --color-logo: rgba(0, 0, 0, 0.059);
     --bg-img: url('https://eanechaev.github.io/tender_consulting/img/bg_light_gray.jpg') fixed center center;
 
 /* THEME SWITCHER */ 
@@ -33,6 +35,8 @@ body.dark-theme {
     --color-line: #b8a5fd55;
     --color-link:#f8d2a1;
     --color-hover: rgba(163, 255, 87, 0.692);
+    --color-logo: rgba(240, 248, 255, 0.111);
+    --color-item:rgba(240,248,255,0.489);
     --bg-img: url('https://eanechaev.github.io/tender_consulting/img/bg_dark.jpg') fixed center center;
 }
 
@@ -166,7 +170,7 @@ ul {
         margin: auto;
         padding: 0 1.3em;
         :hover {
-            color: rgb(204, 223, 240);
+            color: var(--color-text);
         }
     }
 }
@@ -223,9 +227,9 @@ ul {
 }
 
 .lang-switcher {
-    color: rgba(240, 248, 255, 0.489);
+    color: var(--color-item);
     :hover {
-        color: var(--color-base);
+        color: var(--color-text);
     }
 }
 
@@ -234,7 +238,7 @@ ul {
 .logo {
     position: fixed;
     z-index: 1;
-    color:rgba(240, 248, 255, 0.111);
+    color:var(--color-logo);
 }
 
 .hero-words-logo {
