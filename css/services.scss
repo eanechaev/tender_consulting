@@ -9,7 +9,7 @@
   
 :root {
     --font-base: 'Brygada 1918', serif;
-    --font-text: 'Jost', sans-serif;;
+    --font-text: 'Brygada 1918', serif;
     --font-neucha: 'Neucha', cursive;
     --font-nunito: 'Nunito Sans', sans-serif;
     --font-comforter: 'Comforter', cursive;
@@ -463,7 +463,7 @@ section {
         margin: 0 0 0 0;
       }
       i {
-        top: 3px;
+        top: 2.75px;
         color: var(--color-link);
       }
 }
