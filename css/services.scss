@@ -9,6 +9,7 @@
   
 :root {
     --font-base: 'Brygada 1918', serif;
+    --font-text: 'Jost', sans-serif;;
     --font-neucha: 'Neucha', cursive;
     --font-nunito: 'Nunito Sans', sans-serif;
     --font-comforter: 'Comforter', cursive;
@@ -86,7 +87,7 @@ html, body {
 }
   
 body {
-    --bg-img: url('https://eanechaev.github.io/tender_consulting/img/bg_light_gray.jpg') fixed center center;
+    --bg-img: url('../img/bg_light_extra.jpg') fixed center center;
     display: flex;
     // justify-content: center;
     // align-items: center;
@@ -283,7 +284,7 @@ ul {
     max-width: 770px;
     line-height: 23px;
     color: var(--color-text);
-    font-family: var(--font-base);
+    font-family: var(--font-text);
     font-size: 2.5vmin;
 }
 
@@ -342,11 +343,17 @@ section {
       }
 
       h2 {
-        font-size: 2.5vmin;
+        font-size: 2.6vh;
         font-weight: 400;
         color: var(--color-link);
         margin-bottom: 0;
       }
+
+      @media (orientation:portrait) {
+        h2 {
+            font-size: 2vh;
+        }
+    }
       
     //   h2::before{
     //     position: absolute;
@@ -386,8 +393,19 @@ section {
         display: block;
         li {
             padding: 1vw 0 0 0;
+            text-align: left;
+            font-size: 2.3vh;
         }
       }
+
+      @media (orientation:portrait) {
+        ul {
+            li {
+                padding-top: 1.9vh;
+                font-size: 1.8vh;
+            }
+        }
+    }
 
       nav ul {
         padding-left: 0;
@@ -438,5 +456,14 @@ section {
         max-width: 55ch;
         margin: auto;
         color: #36454F;
+      }
+
+      .sub-category {
+        font-weight: 400;
+        margin: 0 0 0 0;
+      }
+      i {
+        top: 3px;
+        color: var(--color-link);
       }
 }
