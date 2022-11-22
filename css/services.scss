@@ -42,7 +42,7 @@ body.dark-theme {
     --color-hover: rgba(163, 255, 87, 0.692);
     --color-logo: rgba(240, 248, 255, 0.111);
     --color-item:rgba(240,248,255,0.489);
-    --bg-img: url('https://eanechaev.github.io/tender_consulting/img/bg_dark.jpg') fixed center center;
+    --bg-img: url('../img/bg_dark.jpg') fixed center center;
 }
 
 .sun-icon{
@@ -87,7 +87,7 @@ html, body {
 }
   
 body {
-    --bg-img: url('../img/bg_light_extra.jpg') fixed center center;
+    --bg-img: url('../img/bg_light_extra1.jpg') fixed center center;
     display: flex;
     // justify-content: center;
     // align-items: center;
